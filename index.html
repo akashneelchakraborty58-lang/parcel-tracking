@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Parcel Tracking</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body{
+font-family:Arial,Helvetica,sans-serif;
+background:#f4f6f9;
+margin:0;
+padding:0;
+}
+.container{
+max-width:720px;
+margin:30px auto;
+background:#fff;
+padding:20px;
+border-radius:8px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+h1{text-align:center;color:#2c3e50;}
+.subtitle{text-align:center;color:#7f8c8d;margin-bottom:25px;}
+
+.row{
+display:flex;
+justify-content:space-between;
+margin-bottom:12px;
+}
+.label{font-weight:bold;}
+.status{
+background:#fff3cd;
+border-left:5px solid #ffc107;
+padding:12px;
+margin:20px 0;
+font-weight:bold;
+}
+.progress{
+margin-top:20px;
+}
+.bar{
+height:14px;
+background:#ddd;
+border-radius:7px;
+overflow:hidden;
+}
+.fill{
+width:15%;
+height:100%;
+background:#3498db;
+}
+.eta{
+margin-top:20px;
+background:#eaf2ff;
+border-left:5px solid #3498db;
+padding:12px;
+}
+footer{
+text-align:center;
+font-size:12px;
+color:#888;
+margin-top:25px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<h1>Parcel Tracking</h1>
+<div class="subtitle">Shipment Status</div>
+
+<div class="row">
+<div class="label">From:</div>
+<div>Siliguri, West Bengal</div>
+</div>
+
+<div class="row">
+<div class="label">To:</div>
+<div>Dr. Sachindranath Dasgupta Sarani, Jalpaiguri</div>
+</div>
+
+<div class="row">
+<div class="label">Current Location:</div>
+<div>Siliguri (Warehouse)</div>
+</div>
+
+<div class="status">
+📦 Parcel is currently in Siliguri and is yet to be delivered.
+</div>
+
+<div class="progress">
+<div style="display:flex;justify-content:space-between;font-size:14px;">
+<span>Siliguri</span>
+<span>Jalpaiguri</span>
+</div>
+<div class="bar">
+<div class="fill"></div>
+</div>
+</div>
+
+<div class="eta">
+<b>Estimated Time of Delivery:</b><br>
+01-02-2026 at 10:00 AM
+</div>
+
+<footer>
+Tracking preview – for demonstration only
+</footer>
+</div>
+
+</body>
+</html>
